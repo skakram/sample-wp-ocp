@@ -5,7 +5,6 @@ metadata:
   labels:
     app: wp-dc1
 spec:
-  serviceName: wp-dc1-mysql
   selector:
     matchLabels:
       app: wp-dc1
