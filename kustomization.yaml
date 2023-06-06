@@ -1,3 +1,4 @@
 resources:
   - pvc-wp.yaml
   - app-wp.yaml
+  - app-db-snapshot.yaml
