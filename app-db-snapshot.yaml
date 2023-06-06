@@ -10,7 +10,7 @@ spec:
 apiVersion: snapshot.storage.k8s.io/v1
 kind: VolumeSnapshot
 metadata:
-  name: snapshot-wp-mysql-emea-dev
+  name: snapshot-wp-mysql-emea-prod
 spec:
   volumeSnapshotClassName: snapshotclass-dc1-ucp-gold
   source:
