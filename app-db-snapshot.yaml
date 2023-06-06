@@ -1,0 +1,17 @@
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: snapshot-wp-app-emea-prod
+spec:
+  volumeSnapshotClassName: snapshotclass-dc1-ucp-gold
+  source:
+    persistentVolumeClaimName: pvc-dc1-wordpress-app
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: snapshot-wp-mysql-emea-dev
+spec:
+  volumeSnapshotClassName: snapshotclass-dc1-ucp-gold
+  source:
+    persistentVolumeClaimName: pvc-dc1-wordpress-mysql
