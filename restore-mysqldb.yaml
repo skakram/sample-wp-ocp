@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: restore-pvc-mysql-prod
+  labels:
+    app: wordpress
+spec:
+  storageClassName: sc-gold
+  dataSource:
+    name: snapshot-wp-mysql-emea-dev
+    kind: VolumeSnapshot
+    apiGroup: snapshot.storage.k8s.io
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
