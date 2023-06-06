@@ -5,7 +5,7 @@ metadata:
   labels:
     app: wordpress
 spec:
-  storageClassName: sc-gold
+  storageClassName: sc-gold-dc1
   dataSource:
     name: snapshot-wp-mysql-emea-dev
     kind: VolumeSnapshot
