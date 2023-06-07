@@ -1,4 +1,3 @@
 resources:
   - pvc-wp.yaml
   - app-wp.yaml
-  - restore-mysqldb.yaml
