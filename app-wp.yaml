@@ -43,7 +43,7 @@ spec:
       volumes:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
-          claimName: pvc-dc1-wordpress-mysql
+          claimName: restore-pvc-mysql-prod  #pvc-dc1-wordpress-mysql restore-pvc-mysql-prod 
 ---
 apiVersion: v1
 kind: Service
