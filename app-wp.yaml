@@ -14,7 +14,7 @@ spec:
         app: wp-dc1
     spec:
       containers:
-      - image: mysql:8.0
+      - image: mysql:5.6
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
@@ -87,7 +87,7 @@ spec:
         app: wp-dc1
     spec:
       containers:
-      - image: wordpress:6.2.1-apache
+      - image: wordpress:4.8-apache
         name: wp-dc1
         env:
         - name: WORDPRESS_DB_HOST
