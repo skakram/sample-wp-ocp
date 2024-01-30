@@ -65,11 +65,9 @@ metadata:
   labels:
     app: wp-dc1
 spec:
+  type: NodePort
   ports:
-    - nodePort: 31394
-      port: 80
-      protocol: TCP
-      targetPort: 80
+    - port: 80
   selector:
     app: wp-dc1
 ---
