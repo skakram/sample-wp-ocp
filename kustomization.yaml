@@ -3,4 +3,3 @@ resources:
   - pvc-mysql.yaml
   - app-wp.yaml
   - restore-mysqldb.yaml
-  - app-db-snapshot.yaml
