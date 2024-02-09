@@ -2,4 +2,3 @@ resources:
   - pvc-wp.yaml
   - pvc-mysql.yaml
   - app-wp.yaml
-  - app-db-snapshot.yaml
