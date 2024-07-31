@@ -3,7 +3,7 @@ kind: VolumeSnapshot
 metadata:
   name: snapshot-wp-app-emea-prod
 spec:
-  volumeSnapshotClassName: snapshotclass-dc1-ucp-gold
+  volumeSnapshotClassName: snapshotclass-gold-dc1
   source:
     persistentVolumeClaimName: pvc-dc1-wordpress-app
 ---
@@ -12,6 +12,6 @@ kind: VolumeSnapshot
 metadata:
   name: snapshot-wp-mysql-emea-prod
 spec:
-  volumeSnapshotClassName: snapshotclass-dc1-ucp-gold
+  volumeSnapshotClassName: snapshotclass-gold-dc1
   source:
     persistentVolumeClaimName: pvc-dc1-wordpress-mysql
